@@ -68,7 +68,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:wght@400;600&family=Rowdies:wght@700&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
   )
 }
 
