@@ -1,0 +1,107 @@
+@import "../variables.scss";
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-bg {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+}
+
+.title {
+  font-family: $titleFamily;
+  width: 1400px;
+  margin: auto;
+  padding-top: 400px;
+  color: white;
+}
+
+.row {
+  margin-left: 50%;
+  text-transform: uppercase;
+
+  p {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+
+    strong {
+      color: $orange;
+    }
+  }
+
+  a {
+    display: block;
+    margin-top: 40px;
+    padding: 0.9rem 0;
+    width: 120px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 1px;
+    background-color: $orange;
+    cursor: pointer;
+  }
+}
+
+.btn-container {
+  position: absolute;
+  width: 100%;
+  top: 450px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    margin: 0 2rem;
+    padding: 0.6rem 0.7rem;
+    font-size: 1.2rem;
+    background-color: rgba($color: #181717, $alpha: 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .title {
+    width: 90%;
+  }
+  .row {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 2.5rem;
+    }
+
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .row {
+    width: 100%;
+    text-align: center;
+    p {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
