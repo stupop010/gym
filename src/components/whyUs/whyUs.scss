@@ -1,9 +1,8 @@
 @import "../variables.scss";
 
 .why-us {
-  height: 520px;
+  min-height: 520px;
   width: 100%;
-  font-family: $primaryFamily;
   background-color: #0a0a0a;
 }
 
@@ -31,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 2.5rem;
 }
 
@@ -66,5 +66,21 @@
   &:hover {
     color: white;
     background: $orange;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .why-container {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .why-container {
+    width: 90%;
+  }
+
+  .why-card-container {
+    justify-content: center;
   }
 }

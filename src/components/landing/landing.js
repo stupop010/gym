@@ -39,7 +39,7 @@ const Landing = () => {
   }
 
   return (
-    <section>
+    <section className="landing">
       <BackgroundImage
         fluid={backgrounds[slideCounter].childImageSharp.fluid}
         className="hero-bg"

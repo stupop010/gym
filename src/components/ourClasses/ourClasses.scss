@@ -1,0 +1,147 @@
+@import "../variables.scss";
+
+.our-classes {
+  background-color: #151515;
+  color: white;
+}
+
+.classes-container {
+  width: 1170px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.classes-title {
+  text-align: center;
+  text-transform: uppercase;
+  p {
+    color: $orange;
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+}
+
+.classes-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.card-small {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.card-lg {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.card {
+  position: relative;
+  padding: 0 15px 30px 15px;
+}
+
+.card-overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.classes-img {
+  height: 280px;
+}
+
+.classes-txt {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    left: -5px;
+    top: -44px;
+    height: 100px;
+    width: 600px;
+    border-top: 4px solid #464646;
+    background: #0a0a0a;
+    content: "";
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  p {
+    color: $orange;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+
+  a {
+    padding: 0.6rem 0.7rem;
+    font-size: 1.2rem;
+    background-color: rgba($color: #181717, $alpha: 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .classes-container {
+    width: 600px;
+  }
+
+  .classes-card-container {
+    .card-small {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .card-lg {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    & :nth-child(4) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  .classes-txt {
+    h5 {
+      height: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .classes-container {
+    width: 90%;
+  }
+
+  .classes-card-container {
+    .card-small {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    & :nth-child(4) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}

@@ -24,8 +24,7 @@ const WhyUs = () => {
             </div>
             <h3>Modern equipment</h3>
             <p>
-              Provides tailor-made services to its esteemed members suffering
-              from injuries or muscular pain.
+              Provides modern equipment. Up to date with machine and technique.
             </p>
           </div>
           <div className="why-card">
