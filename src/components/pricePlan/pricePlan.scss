@@ -1,0 +1,106 @@
+@import "../variables.scss";
+
+.price {
+  background-color: #151515;
+  color: white;
+  font-family: $primaryFamily;
+}
+
+.price-container {
+  width: 1170px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.price-title {
+  text-align: center;
+  text-transform: uppercase;
+  p {
+    color: $orange;
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+}
+
+.price-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.price-card {
+  position: relative;
+  width: 310px;
+  padding: 70px 0;
+  text-align: center;
+  border: 1px solid white;
+  transform: skewY(-5deg);
+  transition: 0.3s;
+
+  & > * {
+    transform: skewY(5deg);
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: $orange;
+  }
+
+  ul {
+    margin: 3rem 0;
+    li {
+      margin: 1.5rem;
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #333333;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 1rem 3.5rem;
+    color: white;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+
+  &:hover a {
+    background-color: $orange;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .price-container {
+    width: 90%;
+  }
+
+  .price-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-card {
+    width: 450px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .price-card {
+    width: 100%;
+  }
+}

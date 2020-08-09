@@ -5,6 +5,9 @@ import SEO from "../components/seo"
 import Landing from "../components/landing"
 import WhyUs from "../components/whyUs"
 import OurClasses from "../components/ourClasses"
+import HomeBanner from "../components/homeBanner"
+import PricePlan from "../components/pricePlan"
+import Gallery from "../components/gallery"
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +15,9 @@ const IndexPage = () => (
     <Landing />
     <WhyUs />
     <OurClasses />
+    <HomeBanner />
+    <PricePlan />
+    <Gallery />
   </Layout>
 )
 
