@@ -1,0 +1,49 @@
+@import "../variables.scss";
+
+.team-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+
+  h5 {
+    font-size: 1.2rem;
+    color: $orange;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 0.8rem;
+  }
+
+  a {
+    color: white;
+    border: 1px solid $orange;
+    font-size: 1.1rem;
+    padding: 1.1rem 2.2rem;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $orange;
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .team-title {
+    h5 {
+      font-size: 1.3rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      font-size: 0.9rem;
+      padding: 0.9rem 1.8rem;
+    }
+  }
+}

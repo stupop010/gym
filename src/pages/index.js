@@ -8,6 +8,7 @@ import OurClasses from "../components/ourClasses"
 import HomeBanner from "../components/homeBanner"
 import PricePlan from "../components/pricePlan"
 import Gallery from "../components/gallery"
+import OurTeamCarousel from "../components/ourTeamCarousel"
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <HomeBanner />
     <PricePlan />
     <Gallery />
+    <OurTeamCarousel />
   </Layout>
 )
 
