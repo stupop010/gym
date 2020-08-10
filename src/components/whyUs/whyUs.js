@@ -8,15 +8,16 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import "./whyUs.scss"
+import SectionTitle from "../sectionTitle"
 
 const WhyUs = () => {
   return (
     <section className="why-us">
       <div className="why-container">
-        <div className="why-title">
-          <p>why choose us?</p>
-          <h2>push your limits forward</h2>
-        </div>
+        <SectionTitle
+          smallTxt="why choose us?"
+          title="push your limits forward"
+        />
         <div className="why-card-container">
           <div className="why-card">
             <div className="why-icon">

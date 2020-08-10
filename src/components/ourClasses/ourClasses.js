@@ -5,6 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import "./ourClasses.scss"
+import SectionTitle from "../sectionTitle"
 
 const OurClasses = () => {
   const {
@@ -70,10 +71,7 @@ const OurClasses = () => {
   return (
     <section className="our-classes">
       <div className="classes-container">
-        <div className="classes-title">
-          <p>our classes</p>
-          <h2>what we can offer</h2>
-        </div>
+        <SectionTitle smallTxt="our classes" title="what we can offer" />
         <div className="classes-card-container">
           <div className="card card-small">
             <div className="card-overflow">

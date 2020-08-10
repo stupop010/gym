@@ -6,6 +6,7 @@ import WhyUs from "../components/whyUs"
 import AboutUs from "../components/aboutUs"
 import OurTeamCarousel from "../components/ourTeamCarousel"
 import HomeBanner from "../components/homeBanner"
+import Testimonial from "../components/testimonial"
 
 const AboutUsPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const AboutUsPage = () => (
     <AboutUs />
     <OurTeamCarousel />
     <HomeBanner />
+    <Testimonial />
   </Layout>
 )
 

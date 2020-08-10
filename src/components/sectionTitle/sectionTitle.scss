@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  p {
+    color: $orange;
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+}
