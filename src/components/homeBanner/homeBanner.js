@@ -16,6 +16,7 @@ const HomeBanner = () => {
       }
     }
   `)
+
   return (
     <section className="banner">
       <BackgroundImage

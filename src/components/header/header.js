@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import {
   faFacebookF,
   faYoutube,
@@ -18,7 +19,9 @@ const Header = () => {
         </h2>
         <ul className="nav-list">
           <li>home</li>
-          <li>about us</li>
+          <li>
+            <Link to="/about-us">about us</Link>
+          </li>
           <li>classes</li>
           <li>services</li>
           <li>our team</li>
