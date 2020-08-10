@@ -22,14 +22,6 @@ const AboutUs = () => {
     triggerOnce: true,
   })
 
-  // useEffect(() => {
-  //   if (inView) {
-  //     const bodyBuilder = document.querySelector("#bodyBuilder")
-  //     const bodyBuilder = document.querySelector("#bodyBuilder")
-  //     const bodyBuilder = document.querySelector("#bodyBuilder")
-  //   }
-  // }, [inView])
-
   return (
     <section className="about-me">
       <BackgroundImage

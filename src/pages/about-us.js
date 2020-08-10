@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import PageHero from "../components/pageHero/pageHero"
+import PageHero from "../components/pageHero"
 import SEO from "../components/seo"
 import WhyUs from "../components/whyUs"
 import AboutUs from "../components/aboutUs"

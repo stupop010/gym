@@ -18,12 +18,16 @@ const Header = () => {
           GY<span>M</span>
         </h2>
         <ul className="nav-list">
-          <li>home</li>
+          <li>
+            <Link to="/">home</Link>
+          </li>
           <li>
             <Link to="/about-us">about us</Link>
           </li>
           <li>classes</li>
-          <li>services</li>
+          <li>
+            <Link to="/services">services</Link>
+          </li>
           <li>our team</li>
           <li>pages</li>
           <li>contact</li>

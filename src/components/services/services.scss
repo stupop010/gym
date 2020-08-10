@@ -1,0 +1,93 @@
+@import "../variables.scss";
+
+.services {
+  background-color: $primaryBgColor;
+}
+
+.services-container {
+  width: $containerWidth;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  overflow: hidden;
+}
+
+.service-img {
+  height: 100%;
+}
+
+.service-text {
+  position: relative;
+  padding: 50px 20px;
+  background-color: #272626;
+  color: white;
+  transition: 0.3s;
+
+  h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    line-height: 1.3rem;
+    color: rgba($color: #706f6f, $alpha: 1);
+  }
+
+  &:hover {
+    background-color: #353434;
+  }
+}
+
+.service-right,
+.service-left {
+  &::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-5px, -50%) rotate(-45deg);
+    height: 30px;
+    width: 30px;
+    background-color: #272626;
+    transition: 0.3s;
+  }
+
+  &:hover::before {
+    background-color: #353434;
+  }
+}
+
+.service-left {
+  &::before {
+    left: -10px;
+  }
+}
+
+.service-right {
+  &::before {
+    right: -10px;
+    transform: translate(5px, -50%) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: $containerWidth + 20) {
+  .services-container {
+    width: 90%;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    grid-gap: 20px 0;
+  }
+
+  .service-text {
+    padding-top: 30px;
+  }
+}
