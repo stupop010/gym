@@ -24,12 +24,16 @@ const Header = () => {
           <li>
             <Link to="/about-us">about us</Link>
           </li>
-          <li>classes</li>
+          <li>
+            <Link to="/classes">classes</Link>
+          </li>
           <li>
             <Link to="/services">services</Link>
           </li>
-          <li>our team</li>
-          <li>pages</li>
+          <li>
+            <Link to="/team">our team</Link>
+          </li>
+
           <li>contact</li>
         </ul>
         <ul className="nav-social">

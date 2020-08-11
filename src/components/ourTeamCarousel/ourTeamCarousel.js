@@ -1,9 +1,10 @@
-import React, { useRef, useState, useEffect } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Slider from "react-slick"
 
-import OurTeamTitle from "../ourTeamTitle/ourTeamTitle"
+import OurTeamTitle from "../ourTeamTitle"
+import TeamCard from "../teamCard"
 
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -88,61 +89,36 @@ const OurTeamCarousel = () => {
     ],
   }
 
-  const Trainer = ({ name }) => {
-    return (
-      <div className="trainer-txt">
-        <div>
-          <h5>{name}</h5>
-          <p>gym trainer</p>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <section className="team-carousel">
       <div className="team-carousel-container">
         <OurTeamTitle />
         <div className="carousel">
           <Slider {...settings}>
-            <div className="trainer">
-              <Img fluid={trainerOne.childImageSharp.fluid} className="slide" />
-              <Trainer name="stuart" />
-            </div>
-
-            <div className="trainer">
-              <Img fluid={trainerTwo.childImageSharp.fluid} className="slide" />
-              <Trainer name="stuart" />
-            </div>
-
-            <div className="trainer">
-              <Img
-                fluid={trainerThree.childImageSharp.fluid}
-                className="slide"
-              />
-              <Trainer name="stuart" />
-            </div>
-
-            <div className="trainer">
-              <Img
-                fluid={trainerFour.childImageSharp.fluid}
-                className="slide"
-              />
-              <Trainer name="stuart" />
-            </div>
-
-            <div className="trainer">
-              <Img
-                fluid={trainerFive.childImageSharp.fluid}
-                className="slide"
-              />
-              <Trainer name="stuart" />
-            </div>
-
-            <div className="trainer">
-              <Img fluid={trainerSix.childImageSharp.fluid} className="slide" />
-              <Trainer name="stuart" />
-            </div>
+            <TeamCard
+              img={trainerOne.childImageSharp.fluid}
+              name="Elliott Mulindi"
+            />
+            <TeamCard
+              img={trainerTwo.childImageSharp.fluid}
+              name="Carolyne Lacy"
+            />
+            <TeamCard
+              img={trainerThree.childImageSharp.fluid}
+              name="Nicolle Petrarch"
+            />
+            <TeamCard
+              img={trainerFour.childImageSharp.fluid}
+              name="Stuart Doney"
+            />
+            <TeamCard
+              img={trainerFive.childImageSharp.fluid}
+              name="Miles Markham"
+            />
+            <TeamCard
+              img={trainerSix.childImageSharp.fluid}
+              name="Susann Housum"
+            />
           </Slider>
         </div>
       </div>

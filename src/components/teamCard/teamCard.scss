@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+.slide {
+  height: 450px;
+  padding: 20px;
+}
+
+.trainer {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover .trainer-txt {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.trainer-txt {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: #0a0a0a;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(200%);
+  transition: 0.3s;
+
+  &::after {
+    position: absolute;
+    left: -5px;
+    top: -44px;
+    height: 100px;
+    width: 600px;
+    border-top: 4px solid #464646;
+    background: #0a0a0a;
+    content: "";
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  h5 {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: $orange;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .trainer-txt {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

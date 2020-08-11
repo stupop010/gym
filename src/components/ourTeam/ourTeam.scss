@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.our-team {
+  background-color: $primaryBgColor;
+}
+
+.our-team-container {
+  width: $containerWidth;
+  padding: 100px 0;
+  margin: auto;
+}
+
+.our-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 2rem;
+}
+
+.our-team-social {
+  display: flex;
+  justify-content: center;
+}
