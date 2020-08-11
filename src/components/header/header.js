@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 import {
   faFacebookF,
   faYoutube,
@@ -8,9 +9,40 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+import Menu from "../menu"
+
 import "./header.scss"
 
 const Header = () => {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+  const handleOpenMenu = () => {
+    document.body.classList.add("menu-open")
+    setToggleMenu(true)
+  }
+
+  const handleCloseMenu = () => {
+    document.body.classList.remove("menu-open")
+    setToggleMenu(false)
+  }
+
+  const Socials = () => (
+    <ul className="nav-social">
+      <li>
+        <FontAwesomeIcon icon={faFacebookF} />
+      </li>
+      <li>
+        <FontAwesomeIcon icon={faTwitter} />
+      </li>
+      <li>
+        <FontAwesomeIcon icon={faYoutube} />
+      </li>
+      <li>
+        <FontAwesomeIcon icon={faInstagram} />
+      </li>
+    </ul>
+  )
+
   return (
     <header>
       <nav>
@@ -37,21 +69,18 @@ const Header = () => {
             <Link to="/contact">contact</Link>
           </li>
         </ul>
-        <ul className="nav-social">
-          <li>
-            <FontAwesomeIcon icon={faFacebookF} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faTwitter} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faYoutube} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faInstagram} />
-          </li>
-        </ul>
+        <Socials />
+        <div className="hamburger" onClick={handleOpenMenu}>
+          <FontAwesomeIcon icon={faBars} />
+        </div>
       </nav>
+      <Menu
+        toggleMenu={toggleMenu}
+        handleCloseMenu={handleCloseMenu}
+        socials={Socials}
+      >
+        <Socials />
+      </Menu>
     </header>
   )
 }
