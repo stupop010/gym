@@ -33,8 +33,9 @@ const Header = () => {
           <li>
             <Link to="/team">our team</Link>
           </li>
-
-          <li>contact</li>
+          <li>
+            <Link to="/contact">contact</Link>
+          </li>
         </ul>
         <ul className="nav-social">
           <li>

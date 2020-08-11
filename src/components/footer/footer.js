@@ -4,10 +4,11 @@ import {
   faMobileAlt,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import SocialLinks from "../socialLinks/socialLinks"
+import ContactListItem from "../contactListItem"
 
 import "./footer.scss"
-import SocialLinks from "../socialLinks/socialLinks"
 
 const Footer = () => {
   return (
@@ -15,27 +16,14 @@ const Footer = () => {
       <div className="footer-contact-us">
         <div>
           <ul>
-            <li className="contact-us-details">
-              <div className="contact-us-icon map">
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-              </div>
-              <p>
-                333 Middle Winchendon Rd, Rindge,
-                <br /> NH 03461
-              </p>
-            </li>
-            <li className="contact-us-details">
-              <div className="contact-us-icon">
-                <FontAwesomeIcon icon={faMobileAlt} />
-              </div>
-              <p>125-711-811 125-668-886</p>
-            </li>
-            <li className="contact-us-details">
-              <div className="contact-us-icon">
-                <FontAwesomeIcon icon={faEnvelope} />
-              </div>
-              <p>Support@gym.com</p>
-            </li>
+            <ContactListItem icon={faMapMarkerAlt}>
+              333 Middle Winchendon Rd, Rindge,
+              <br /> NH 03461
+            </ContactListItem>
+            <ContactListItem icon={faMobileAlt}>
+              125-711-811 125-668-886
+            </ContactListItem>
+            <ContactListItem icon={faEnvelope}>Support@gym.com</ContactListItem>
           </ul>
         </div>
       </div>

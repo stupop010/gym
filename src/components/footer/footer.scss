@@ -17,25 +17,6 @@
   }
 }
 
-.contact-us-icon {
-  width: 65px;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  color: white;
-  background-color: $orange;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.contact-us-details {
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
 .footer {
   background-color: #000000;
   color: white;
@@ -81,7 +62,7 @@
 
 .useful-links {
   li {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
   }
 }
 
