@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"
@@ -51,7 +51,7 @@ const Landing = () => {
               <h1>
                 be <strong>strong</strong> train hard
               </h1>
-              <a>get info</a>
+              <Link to="/services">get info</Link>
             </div>
           </div>
         </div>

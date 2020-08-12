@@ -30,5 +30,6 @@
 
   .carousel {
     width: calc(100% + 40px);
+    overflow: hidden;
   }
 }

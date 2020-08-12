@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -61,9 +61,9 @@ const OurClasses = () => {
           <p>{smallTxt}</p>
           <h5>{title}</h5>
         </div>
-        <a>
+        <Link to="classes">
           <FontAwesomeIcon icon={faArrowRight} />
-        </a>
+        </Link>
       </div>
     )
   }

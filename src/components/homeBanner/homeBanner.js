@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import "./homeBanner.scss"
@@ -26,7 +26,7 @@ const HomeBanner = () => {
         <div className="banner-content">
           <h2>registration now to get more deals</h2>
           <p> where health, beauty and fitness meet.</p>
-          <a>appointment</a>
+          <Link to="/contact">appointment</Link>
         </div>
       </BackgroundImage>
     </section>

@@ -51,22 +51,34 @@ const Header = () => {
         </h2>
         <ul className="nav-list">
           <li>
-            <Link to="/">home</Link>
+            <Link to="/" activeClassName="active">
+              home
+            </Link>
           </li>
           <li>
-            <Link to="/about-us">about us</Link>
+            <Link to="/about-us" activeClassName="active">
+              about us
+            </Link>
           </li>
           <li>
-            <Link to="/classes">classes</Link>
+            <Link to="/classes" activeClassName="active">
+              classes
+            </Link>
           </li>
           <li>
-            <Link to="/services">services</Link>
+            <Link to="/services" activeClassName="active">
+              services
+            </Link>
           </li>
           <li>
-            <Link to="/team">our team</Link>
+            <Link to="/team" activeClassName="active">
+              our team
+            </Link>
           </li>
           <li>
-            <Link to="/contact">contact</Link>
+            <Link to="/contact" activeClassName="active">
+              contact
+            </Link>
           </li>
         </ul>
         <Socials />

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import "./ourTeamTitle.scss"
 
@@ -9,7 +10,7 @@ const OurTeamTitle = () => {
         <h5>our team</h5>
         <h3>train with experts</h3>
       </div>
-      <a>appointment</a>
+      <Link to="/">appointment</Link>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import "./pricePlan.scss"
 import SectionTitle from "../sectionTitle"
@@ -16,7 +17,7 @@ const PricePlan = () => {
           <li>Personal trainer</li>
           <li>No time restriction</li>
         </ul>
-        <a>enroll now</a>
+        <Link to="/">enroll now</Link>
       </div>
     )
   }

@@ -6,12 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./menu.scss"
 
 const Menu = ({ toggleMenu, handleCloseMenu, children }) => {
-  console.log(toggleMenu)
   return (
     <>
       {toggleMenu && (
         <div className="menu-container">
-          <div className="menu">
+          <div className={toggleMenu ? "menu open" : "menu"}>
             <div className="menu-close" onClick={handleCloseMenu}>
               <FontAwesomeIcon icon={faTimes} />
             </div>

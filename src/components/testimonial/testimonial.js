@@ -2,7 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { faStar, faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import SectionTitle from "../sectionTitle"
