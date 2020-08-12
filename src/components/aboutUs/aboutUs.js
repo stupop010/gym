@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import { useInView } from "react-intersection-observer"
@@ -18,7 +18,7 @@ const AboutUs = () => {
     }
   `)
 
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     triggerOnce: true,
   })
 
