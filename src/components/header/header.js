@@ -23,6 +23,7 @@ const Header = () => {
 
   const handleCloseMenu = () => {
     document.body.classList.remove("menu-open")
+    console.log(document)
     setToggleMenu(false)
   }
 

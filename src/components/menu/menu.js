@@ -15,22 +15,22 @@ const Menu = ({ toggleMenu, handleCloseMenu, children }) => {
               <FontAwesomeIcon icon={faTimes} />
             </div>
             <ul className="menu-links">
-              <li>
+              <li onClick={handleCloseMenu}>
                 <Link to="/">home</Link>
               </li>
-              <li>
+              <li onClick={handleCloseMenu}>
                 <Link to="/about-us">about us</Link>
               </li>
-              <li>
+              <li onClick={handleCloseMenu}>
                 <Link to="/classes">classes</Link>
               </li>
-              <li>
+              <li onClick={handleCloseMenu}>
                 <Link to="/services">services</Link>
               </li>
-              <li>
+              <li onClick={handleCloseMenu}>
                 <Link to="/team">our team</Link>
               </li>
-              <li>
+              <li onClick={handleCloseMenu}>
                 <Link to="/contact">contact</Link>
               </li>
             </ul>
